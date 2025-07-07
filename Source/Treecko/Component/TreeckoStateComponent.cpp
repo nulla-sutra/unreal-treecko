@@ -65,7 +65,7 @@ bool UTreeckoStateComponent::SetContextRequirements(FStateTreeExecutionContext& 
     // auto Result = Super::SetContextRequirements(Context, bLogErrors);
     bool Result = Context.IsValid();
 
-    Context.SetLinkedStateTreeOverrides(&LinkedStateTreeOverrides);
+    Context.SetLinkedStateTreeOverrides(LinkedStateTreeOverrides);
 
     Context.SetContextDataByName(Treecko::FStateTreeContextDataNames::ContextOwner, ActorContext.Owner.Get());
     Context.SetContextDataByName(Treecko::FStateTreeContextDataNames::ContextAvatar, ActorContext.Avatar.Get());
