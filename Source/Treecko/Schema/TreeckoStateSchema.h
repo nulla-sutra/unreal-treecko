@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "StateTreeSchema.h"
 #include "Components/StateTreeComponent.h"
+#include "Components/StateTreeComponentSchema.h"
 #include "TreeckoStateSchema.generated.h"
 
 class UStateTreeComponent;
@@ -26,7 +27,7 @@ namespace Treecko
  * 
  */
 UCLASS(BlueprintType, EditInlineNew, meta=(CommonSchema), DisplayName = "Treecko StateTree")
-class TREECKO_API UTreeckoStateSchema : public UStateTreeSchema
+class TREECKO_API UTreeckoStateSchema : public UStateTreeComponentSchema
 {
     GENERATED_BODY()
 
@@ -42,8 +43,8 @@ protected:
     virtual void PostLoad() override;
     //
 
-    UPROPERTY()
-    TArray<FStateTreeExternalDataDesc> ContextDataDescs;
+    // UPROPERTY()
+    // TArray<FStateTreeExternalDataDesc> ContextDataDescs;
     //
 
 public:

@@ -24,6 +24,7 @@ namespace Treecko
 
 UTreeckoStateSchema::UTreeckoStateSchema(): StateTreeComponentType(UStateTreeComponent::StaticClass())
 {
+    ContextDataDescs.Empty();
     ContextDataDescs.Append({
         {
             Treecko::FStateTreeContextDataNames::ContextOwner,
