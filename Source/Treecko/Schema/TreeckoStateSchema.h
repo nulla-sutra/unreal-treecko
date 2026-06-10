@@ -6,6 +6,7 @@
 #include "StateTreeSchema.h"
 #include "Components/StateTreeComponent.h"
 #include "Components/StateTreeComponentSchema.h"
+#include "GameFramework/Controller.h"
 #include "TreeckoStateSchema.generated.h"
 
 class UStateTreeComponent;

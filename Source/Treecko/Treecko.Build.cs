@@ -30,6 +30,11 @@ public class Treecko : ModuleRules
             new[]
             {
                 "Core",
+                "CoreUObject",
+                "Engine",
+                "StateTreeModule",
+                "GameplayAbilities",
+                "GameplayStateTreeModule",
 
                 // ... add other public dependencies that you statically link with here ...
             }
@@ -39,13 +44,8 @@ public class Treecko : ModuleRules
         PrivateDependencyModuleNames.AddRange(
             new[]
             {
-                "CoreUObject",
-                "Engine",
                 "Slate",
                 "SlateCore",
-                "StateTreeModule",
-                "GameplayAbilities",
-                "GameplayStateTreeModule",
                 "AIModule",
                 "NetCore"
                 // ... add private dependencies that you statically link with here ...	

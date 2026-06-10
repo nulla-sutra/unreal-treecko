@@ -10,6 +10,7 @@
 #include "StateTreeExecutionTypes.h"
 #include "StateTreePropertyFunctionBase.h"
 #include "StateTreeTaskBase.h"
+#include "Components/SkeletalMeshComponent.h"
 
 namespace Treecko
 {
